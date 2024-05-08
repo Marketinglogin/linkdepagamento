@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Copiar Link</h2>
+
+<!-- O link que você quer copiar -->
+<input type="text" value="https://www.exemplo.com" id="linkParaCopiar">
+
+<!-- Botão para acionar a cópia do link -->
+<button onclick="copiarLink()">Copiar Link</button>
+
+<script>
+function copiarLink() {
+  var link = document.getElementById("linkParaCopiar");
+  link.select();
+  document.execCommand("copy");
+  alert("Link copiado: " + link.value);
+}
+</script>
+
+</body>
+</html>
